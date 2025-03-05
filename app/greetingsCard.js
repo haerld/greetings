@@ -16,7 +16,7 @@ const GreetingsCard = () => {
           <motion.div 
             className="absolute flex justify-center items-center inset-0 bg-gray-100 shadow-lg overflow-hidden rounded-3xl"
             initial={{ width: '50%', left: '25%' }}
-            animate={{ width: isUnfolded ? '80%' : '40%', left: isUnfolded ? '10%' : '30%' }}
+            animate={{ width: isUnfolded ? '80%' : '50%', left: isUnfolded ? '10%' : '25%' }}
             transition={{ duration: 0.6, type: "spring", stiffness: 300, damping: 30 }}
           >
             {/* Folded Half (Cover) */}
@@ -39,7 +39,7 @@ const GreetingsCard = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
               >
-                <h1 className="text-lg sm:text-xl font-bold mb-5 sm:mb-2 text-gray-800 text-center">
+                <h1 className="text-lg sm:text-xl font-bold mb-5 sm: text-gray-800 text-center">
                   HIII, DEAAAR! HAHAHAHAHA
                 </h1>
                 <p className="text-sm sm:text-md text-justify text-gray-700">
