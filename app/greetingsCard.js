@@ -27,14 +27,14 @@ const GreetingsCard = () => {
               transition={{ duration: 0.6, type: "spring", stiffness: 300, damping: 30 }}
             >
               <h2 className="text-lg sm:text-xl font-bold text-white text-center">
-                {isUnfolded ? '' : 'Tap to Open'}
+                {isUnfolded ? '' : 'Click me :>'}
               </h2>
             </motion.div>
   
             {/* Unfolded Content */}
             {isUnfolded && (
               <motion.div 
-                className="absolute inset-0 bg-white flex flex-col justify-start items-start p-6 sm:p-8 lg:p-12"
+                className="absolute inset-0 bg-white flex flex-col justify-start items-start p-6 sm:p-8 lg:p-12 overflow-y-scroll"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
